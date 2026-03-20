@@ -1,8 +1,5 @@
-import { Projects } from "../pages";
+import { HashRedirect } from "../components/hash-redirect";
 
-const ProjectsPage = () => {
-  "use client";
-  return <Projects />;
-};
-
-export default ProjectsPage;
+export default function ProjectsRedirectPage() {
+  return <HashRedirect hash="projects" />;
+}

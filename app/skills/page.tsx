@@ -1,9 +1,5 @@
-import React from "react";
-import { SkillsPage } from "../pages";
+import { HashRedirect } from "../components/hash-redirect";
 
-const page = () => {
-  "use client";
-  return <SkillsPage />;
-};
-
-export default page;
+export default function SkillsRedirectPage() {
+  return <HashRedirect hash="skills" />;
+}
